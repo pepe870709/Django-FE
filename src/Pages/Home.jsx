@@ -10,21 +10,21 @@ import { Outlet } from 'react-router-dom'
 
 const Home = () => {
 
-  const {data, isLoading, refetch} = useFetchMe(null)
+  //const {data, isLoading, refetch} = useFetchMe(null)
   
-  const {data: data1, refresh} = useRefresh(null)
+  //const {data: data1, refresh} = useRefresh(null)
 
   
   const fetchyMe = async () => {
-   const result = await refetch()
-   if(result.isSuccess)
-    console.log(result.data)
-    else if (result.isError){
-      //queryClient.removeQueries({queryKey: ['me']})
-      console.log(data)
-      //setId(data?.userId)
-      refresh()
-    }
+  //  const result = await refetch()
+  //  if(result.isSuccess)
+  //   console.log(result.data)
+  //   else if (result.isError){
+  //     //queryClient.removeQueries({queryKey: ['me']})
+  //     console.log(data)
+  //     //setId(data?.userId)
+  //     refresh()
+  //   }
   }
 
   return (
