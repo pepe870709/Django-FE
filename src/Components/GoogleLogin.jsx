@@ -5,26 +5,26 @@ import { useContextModal } from '../Context-API/ContextModal';
 
 function GoogleLogin() {
 
-  const {data, isLoading, refetch, isError, isSuccess, response} = useSignInGoogle();
-  const {openModal, closeModal, setBannerShow, banner} = useContextModal();
+  // const {data, isLoading, refetch, isError, isSuccess, response} = useSignInGoogle();
+  // const {openModal, closeModal, setBannerShow, banner} = useContextModal();
 
-  useEffect(() => {
-    window.google.accounts.id.renderButton(
-      document.getElementById('google-btn'),
-      { theme: 'outline', size: 'large', shape: 'pill' }
-    );
-    return () => {google.accounts.id.disableAutoSelect()}
-  }, []);
+  // useEffect(() => {
+  //   window.google.accounts.id.renderButton(
+  //     document.getElementById('google-btn'),
+  //     { theme: 'outline', size: 'large', shape: 'pill' }
+  //   );
+  //   return () => {google.accounts.id.disableAutoSelect()}
+  // }, []);
 
-  useEffect(() => {
-    if(isSuccess && data){
-      setBannerShow(1);
-      openModal();
-    }else if(isError && response){
-      setBannerShow(2);
-      //openModal();
-    }
-  }, [isSuccess, isError]);
+  // useEffect(() => {
+  //   if(isSuccess && data){
+  //     setBannerShow(1);
+  //     openModal();
+  //   }else if(isError && response){
+  //     setBannerShow(2);
+  //     //openModal();
+  //   }
+  // }, [isSuccess, isError]);
   
 
   return (
