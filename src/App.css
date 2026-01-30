@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+   themes: light --dracula, dark --dracula;
+ }
+
+
+ #add-product-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+   
+   padding: 2rem;
+   border: 1px solid #ccc;
+   border-radius: 0.5rem;
+   max-width: 800px;
+   background-color: #f9f9f9;
+ }
+
+ #options, #attributes, #image-urls {
+  padding: 2rem;
+   border: 1px solid #ccc;
+   border-radius: 0.5rem;
+   max-width: 800px;
+   background-color: #f9f9f9;
+   padding-top: 1%;
+ }
